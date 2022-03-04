@@ -1,0 +1,157 @@
+ /* NAV BAR CSS */
+
+ /* Container is the image and the nav bar included */
+  .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  /* Nav bar unordered list  */
+  nav ul {
+    display: flex;
+    list-style: none;
+  }
+
+  /* URL link for nav bar */
+  a {
+      text-decoration: none;
+  }
+  
+  /* Individual list (Work, About, Contact, Resume) */
+  nav ul li {
+    margin-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+  }
+
+  /* HERO CSS */
+  
+  .heroImg {
+    height: 300px;
+    padding: 25px;
+  }
+
+  .content {
+    width: 600px;
+    margin: 0 auto;
+  }
+
+ /* MY SKILLS CSS */
+
+  .flexContainer {
+    display: flex;
+    background-color: black;
+  }
+
+  .flexContainer > div {
+    background-color: white;
+    margin: 20px;
+    padding: 20px;
+    font-size: 20px;
+  }
+
+  /* MY WORK CSS */ 
+
+  .myWork {
+    text-align: center;
+    border-bottom: 2px solid black;
+    width: auto;
+    margin: 50px auto;
+  }
+
+  #categoryGrid {
+    margin: 0px 5%;
+    display: grid;
+    grid-template-rows: 300px 300px 300px;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+    "bubby bubby bubby"
+    "moms moms moms"
+    "time time time"
+    ;
+  }
+
+  #bubby {
+    grid-area: bubby;
+    background-image: url("../images/project-bubbylogo.png");
+  }
+  #moms {
+    grid-area: moms;
+    background-image: url("../images/project-momslogo.png");
+  }
+  
+  #time {
+    grid-area: time;
+    background-image: url("../images/project-timetacticlogo.png");
+  }
+
+  .categoryGridArea {
+    background-position: center;
+    background-size: auto;
+    background-repeat: no-repeat;
+    margin: 5px;
+    cursor: pointer;
+    display: grid;
+    align-content: end;
+  }
+
+  .button {
+    background-color: black;
+    border: none;
+    color: white;
+    width: 100px;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+
+  .heading {
+    background-color: rgba(0,0,0,0.7);
+    padding: 15px;
+    height: 50px;
+    color: white;
+    font-size: 18px;
+    border-bottom: 5px solid black;
+  }
+
+  /* FOOTER CSS */
+
+  footer {
+    background-color: black;
+    padding: 20px;
+  }
+
+  footer ul {
+    display: inline-block;
+    vertical-align: top;
+    display: flex;
+    list-style: none;
+    color: azure;
+  }
+
+  /* Individual list (Work, About, Contact, Resume) */
+  footer ul li {
+    margin-right: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 600px) {
+
+    #categoryGrid {
+      grid-template-rows: 300px 300px 300px 300px 300px;
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "bubby"
+        "mom"
+        "time"
+      ;
+    }
+  }
